@@ -13,7 +13,7 @@ form.forEach((field) => {
 
   const logUser = () => {
     let {Email, Password} = user
-    Email && Password ? (localStorage.setItem("token", "userComplete"), window.open("./home.html", "self")) : ("llenar formulario")
+    Email && Password ? (localStorage.setItem("token", "userComplete"), window.open("./home.html", "self")) : alert("llenar formulario")
   }
 
   document.getElementById("btn").addEventListener("click", (logUser))
